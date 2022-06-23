@@ -38,8 +38,8 @@ function getNumberInfo() {
     // Get the value of the input field
     let num = document.getElementById("mynumber").value;
     // Check if input is valid
-    if (isNaN(num) || num.toString().length == 0 || num<2 || num>1000 || !Number.isInteger(Number(num))) {
-        txt += `Invalid input.  Please enter a whole number between 2 and 1000.`;
+    if (isNaN(num) || num.toString().length == 0 || num<7 || num>1000 || !Number.isInteger(Number(num))) {
+        txt += `Invalid input.  Please enter a whole number between 7 and 1000.`;
     } else {
         txt += `You have entered the number ${num} as denominator.<p>`;
         txt += `Value is ${reciprocalCycles(num)} for which 1/${reciprocalCycles(num)} contains the longest recurring cycle in its decimal fraction part.`
