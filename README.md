@@ -17,3 +17,21 @@ Where 0.1(6) means 0.16666..., and has a 1-digit recurring cycle.  It can be see
 The aim is to find the value of d less than n, for which 1/d contains the longest recurring cycle in its decimal fraction part.
 
 Information at [Project Euler 026](https://projecteuler.net/problem=26)
+
+## UX
+
+**User Stories**
+
+As a user, I expect the function `reciprocalCycles(700)` to return a number.
+
+As a user, I expect the function `reciprocalCycles(700)` to return 659.
+
+As a user, I expect the function `reciprocalCycles(800)` to return 743.
+
+As a user, I expect the function `reciprocalCycles(900)` to return 887.
+
+As a user, I expect the function `reciprocalCycles(1000)` to return 983.
+
+**Information Architecture**
+
+The function `reciprocalCycles(n)` returns a number, where `n` is a number between 2 and 1000.
