@@ -30,7 +30,7 @@ Information at [Project Euler 026](https://projecteuler.net/problem=26)
 
 **Getting Started**
 
-Enter a whole number (denominator) between 7 and 1000 in the input field and click on the Submit Button.  As long as your input is valid, you will see the value of d less than the number, for which 1/d contains the longest recurring cycle in its decimal fraction part.  For example, if you entered 700, you would expect to get 659.  Click on the Reset Button to clear the information or to start again.
+Enter a whole number between 7 and 1000 in the input field and click on the Submit Button.  As long as your input is valid, you will see the value of d less than the number, for which 1/d contains the longest recurring cycle in its decimal fraction part.  For example, if you entered 700, you would expect to get 659.  Click on the Reset Button to clear the information or to start again.
 
 **User Stories**
 
