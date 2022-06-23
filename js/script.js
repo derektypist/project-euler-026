@@ -48,3 +48,35 @@ function getNumberInfo() {
     // Display Information in the Browser
     document.getElementById("numinfo").innerHTML = txt;
 }
+
+// Function to Calculate Cycle Length
+function cycleLength(n) {
+    let k = 1, mod = 10 % n;
+    while (mod !==1) {
+        mod = (mod * 10) % n;
+        k++;
+    }
+    return k;
+}
+
+/*
+    Function to find the value of d less than n, where 1/d
+    contains the longest recurring cycle in its decimal fraction part
+    reciprocalCycles(700)  returns 659
+    reciprocalCycles(800)  returns 743
+    reciprocalCycles(900)  returns 887
+    reciprocalCycles(1000) returns 983
+
+*/
+function reciprocalCycles(n) {
+    let maxCycle = 1, winningDigit = 3;
+    for (let i=7;i<=n;i++) {
+        if (!isPrime(i)) continue;
+        let cycle = cycleLength(i);
+        if (cycle > maxCycle) {
+            maxCycle = cycle;
+            winningDigit = i;
+        }
+    }
+    return winningDigit;
+}
